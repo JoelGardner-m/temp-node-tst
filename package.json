@@ -5,6 +5,7 @@
   "main": "1-intro.js",
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "express": "^4.18.3",
     "lodash": "^4.17.21"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const {readFileSync, writeFileSync } = require('fs')
-const Homepage = readFileSync('../web project/calculator/index.html','utf-8')
+const Homepage = readFileSync('./New website/index.html','utf-8')
 
 //app.get
 //app.post
