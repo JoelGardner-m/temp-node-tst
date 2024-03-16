@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const {readFileSync, writeFileSync } = require('fs')
-const Homepage = readFileSync('../web project/calculator/index.html','utf-8')
+const Homepage = readFileSync('./New website/index.html','utf-8')
+const style = readFileSync('./New website/styles.css','utf-8')
 
 //app.get
 //app.post
@@ -14,8 +15,12 @@ const Homepage = readFileSync('../web project/calculator/index.html','utf-8')
 app.get('/',(req,res) => {
     console.log('using seraching for info')
     res.status(200).send(Homepage)
-
+    //res._writeHead(200, { 'content-type': 'style/css' })
+    res._write(Homepage)
+    console.log(req.url)
 })
+
+
 
 app.get('/about',(req,res) => {
     console.log('using seraching for info')
